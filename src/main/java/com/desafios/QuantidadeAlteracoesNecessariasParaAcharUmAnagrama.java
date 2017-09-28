@@ -13,7 +13,7 @@ import java.util.TreeSet;
 
 public class QuantidadeAlteracoesNecessariasParaAcharUmAnagrama {
 	
-    static int[] getMinimumDifference(String[] a, String[] b) {
+    public static int[] getMinimumDifference(String[] a, String[] b) {
     	
     	int[] retorno = new int[a.length - 1];
     	int counter = 0;
