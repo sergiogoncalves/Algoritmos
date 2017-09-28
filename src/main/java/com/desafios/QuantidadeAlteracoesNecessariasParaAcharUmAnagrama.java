@@ -1,4 +1,10 @@
-package com.algoritmos.collections.diversos;
+/* AINDA FALTA TERMINAR
+ * 
+ * Este algoritmo é utilizado para comparar duas strings e verificar se são iguais, se são anagramas e se não forem
+ * quantas palavras precisam ser alteradas pra virar um anagrama. Também compara se são do mesmo tamanho.
+ */
+
+package com.desafios;
 
 import java.util.Arrays;
 import java.util.HashSet;

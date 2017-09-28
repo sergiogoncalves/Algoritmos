@@ -1,4 +1,11 @@
-package com.algoritmos.collections.diversos;
+/*
+ * 
+ * Este algoritmo é feito para encontrar em um array qual é o primeiro ou segundo ou terceiro
+ * maior valor
+ * 
+ * O treeset só aceita itens únicos e os ordena, nesse caso eu ordenei de tras pra frente
+ */
+package com.desafios;
 
 import java.util.Arrays;
 import java.util.TreeSet;
