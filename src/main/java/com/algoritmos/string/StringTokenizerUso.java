@@ -4,8 +4,14 @@ package com.algoritmos.string;
 // hasMoreTokens, nextToken, countTokens entre outros
 
 import java.util.StringTokenizer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 
 public class StringTokenizerUso {
+	
+	private final static Logger LOGGER = Logger.getLogger(StringTokenizer.class.getName());
 
 	public static void printTokens(String string) {
 
@@ -13,7 +19,7 @@ public class StringTokenizerUso {
 		
 		while (st.hasMoreTokens()) { // Cada vez que faz um nextToken ele retira da fila e o countTokens não funciona corretamente
 
-			System.out.println(st.nextToken());
+			LOGGER.log(Level.INFO, st.nextToken());
 
 		}
 	}
@@ -33,9 +39,11 @@ public class StringTokenizerUso {
 
 		while (st.hasMoreTokens()) {
 
-			System.out.println(st.nextToken());
+			LOGGER.log(Level.WARNING, st.nextToken());
 
 		}
+		
+		LOGGER.log(Level.WARNING, "Testando o novo log");
 
 		return ret; 
 	}
