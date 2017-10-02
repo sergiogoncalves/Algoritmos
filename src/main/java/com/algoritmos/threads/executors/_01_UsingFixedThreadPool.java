@@ -13,6 +13,8 @@ package com.algoritmos.threads.executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.algoritmos.threads.common.LoopTaskA;
+
 public class _01_UsingFixedThreadPool {
 
 	public static void main(String[] args) {

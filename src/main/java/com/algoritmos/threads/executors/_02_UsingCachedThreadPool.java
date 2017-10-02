@@ -3,6 +3,8 @@ package com.algoritmos.threads.executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.algoritmos.threads.common.LoopTaskA;
+
 /*
  * Create as many thread as required for executing the submitted task. If a task is submitted to it and a thread is available the that thread is used to run the task.
  * If the threads are busy to execute another task so another thread is created.
@@ -20,7 +22,7 @@ public class _02_UsingCachedThreadPool {
 	public static void main(String[] args) {
 		System.out.println("Main Thread starts here..");
 		
-		int numberExecutors = 20;
+		int numberExecutors = 5;
 		
 		ExecutorService execService = Executors.newCachedThreadPool();
 		
