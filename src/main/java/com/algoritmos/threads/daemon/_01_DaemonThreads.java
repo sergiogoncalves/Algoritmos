@@ -2,7 +2,7 @@ package com.algoritmos.threads.daemon;
 
 import com.algoritmos.threads.common.LoopTaskD;
 
-//Daemon são threads que não param de executar até que a aplicação pare.
+//Daemon são threads que não param de executar até que a aplicação pare. Então a JVM para a Daemon
 
 public class _01_DaemonThreads {
 	
