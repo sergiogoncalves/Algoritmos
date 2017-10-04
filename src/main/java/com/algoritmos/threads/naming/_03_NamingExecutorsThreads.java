@@ -9,6 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.algoritmos.threads.common.LoopTaskC;
+import com.algoritmos.threads.common.NamedThreadFactory;
 
 public class _03_NamingExecutorsThreads {
 
@@ -18,7 +19,7 @@ public class _03_NamingExecutorsThreads {
 		
 		System.out.println("[ " + currentThreadName + " ] - Main Thread starts here..");
 		
-		ExecutorService executorService = Executors.newCachedThreadPool(new NameThreadFactory());
+		ExecutorService executorService = Executors.newCachedThreadPool(new NamedThreadFactory());
 		
 		executorService.execute(new LoopTaskC());
 		executorService.execute(new LoopTaskC());

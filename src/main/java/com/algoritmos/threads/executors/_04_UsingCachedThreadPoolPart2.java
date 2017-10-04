@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.algoritmos.threads.common.LoopTaskA;
 import com.algoritmos.threads.common.LoopTaskC;
-import com.algoritmos.threads.naming.NameThreadFactory;
+import com.algoritmos.threads.common.NamedThreadFactory;
 
 /*
  * Create as many thread as required for executing the submitted task. If a task is submitted to it and a thread is available the that thread is used to run the task.
@@ -26,7 +26,7 @@ public class _04_UsingCachedThreadPoolPart2 {
 		System.out.println("Main Thread starts here..");
 		
 		
-		ExecutorService execService = Executors.newCachedThreadPool(new NameThreadFactory());
+		ExecutorService execService = Executors.newCachedThreadPool(new NamedThreadFactory());
 		
 		execService.execute(new LoopTaskC());
 		execService.execute(new LoopTaskC());

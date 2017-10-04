@@ -1,8 +1,8 @@
-package com.algoritmos.threads.naming;
+package com.algoritmos.threads.common;
 
 import java.util.concurrent.ThreadFactory;
 
-public class NameThreadFactory implements ThreadFactory {
+public class NamedThreadFactory implements ThreadFactory {
 
 	private static int count = 0;
 	private static String NAME = "MyThread-";
