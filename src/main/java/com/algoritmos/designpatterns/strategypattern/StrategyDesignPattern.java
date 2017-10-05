@@ -19,7 +19,7 @@ Padrão Strategy é um classico padrão de injeção de dependencia pois adicion
 
 Dependency injection e Strategy Pattern are related for each defines behavior by setting member variables of a class
 
-
+POR EXEMPLO EXISTEM VÁRIAS FORMAS DE CALCULAR SALÁRIO E VC DEFINE ISSO EM TEMPO DE EXECUÇÃO
 
 */
 public class StrategyDesignPattern {
